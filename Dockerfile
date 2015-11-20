@@ -15,6 +15,6 @@ RUN apk add --update gnupg libc6-compat openssl && \
     apk del gnupg openssl && \
     rm -rfv /hasicorp.gpg /nomad*
 
-ENTRYPOINT ["/usr/local/bin/nomad"]
 VOLUME /data
+ENTRYPOINT ["/usr/local/bin/nomad"]
 CMD ["agent", "-server", "-data-dir", "/data"]
