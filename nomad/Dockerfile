@@ -1,7 +1,7 @@
 FROM frolvlad/alpine-glibc:alpine-3.4
 
-ENV NOMAD_VERSION=0.3.1 \
-    NOMAD_SHA256=467fcebe9f0a349063a4f16c97cb71d9c57451fc1f10cdb2292761cf56542671
+ENV NOMAD_VERSION=0.4.0 \
+    NOMAD_SHA256=c0479dcc03d35c1b0f6e7be256732431384bec16901a124dd97b2a60d465fb91
 RUN apk add --update ca-certificates wget && \
     wget -O /nomad_${NOMAD_VERSION}_linux_amd64.zip https://releases.hashicorp.com/nomad/${NOMAD_VERSION}/nomad_${NOMAD_VERSION}_linux_amd64.zip && \
     echo "${NOMAD_SHA256}  nomad_${NOMAD_VERSION}_linux_amd64.zip" > /nomad.sha256 && \
