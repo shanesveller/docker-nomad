@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:3.2
+FROM frolvlad/alpine-glibc:alpine-3.4
 
 ENV NOMAD_VERSION=0.3.1 \
     NOMAD_SHA256=467fcebe9f0a349063a4f16c97cb71d9c57451fc1f10cdb2292761cf56542671
